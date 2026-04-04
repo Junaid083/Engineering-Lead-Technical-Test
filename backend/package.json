@@ -1,0 +1,20 @@
+{
+  "name": "doc-qa-api",
+  "version": "1.0.0",
+  "description": "Lead Assesment API for Document Question Answering",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "multer": "^1.4.5-lts.1",
+    "@huggingface/transformers": "^3.4.1",
+    "pdf-parse": "^1.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
