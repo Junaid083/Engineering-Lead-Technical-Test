@@ -36,6 +36,7 @@ export default function FileUpload({ onSuccess }) {
 
   return (
     <div style={styles.wrapper}>
+      <p style={styles.hint}>Supported formats: PDF, TXT, MD</p>
       <input
         ref={fileRef}
         type="file"
@@ -74,6 +75,11 @@ const styles = {
     borderRadius: 6,
     cursor: 'pointer',
     fontSize: 14,
+  },
+  hint: {
+    color: '#888',
+    fontSize: 13,
+    margin: '0 0 10px',
   },
   error: {
     color: '#d32f2f',
