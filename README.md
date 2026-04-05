@@ -1,3 +1,39 @@
+# Document Q&A — Setup
+
+## Running with Docker
+
+```bash
+docker-compose up --build
+```
+
+Frontend: http://localhost:3000 | Backend API: http://localhost:3001
+
+## Running Locally
+
+```bash
+# Backend
+cd backend
+pnpm install
+pnpm dev
+
+# Frontend (separate terminal)
+cd frontend
+pnpm install
+pnpm dev
+```
+
+## Tech Stack
+
+- **Backend:** Express (Node.js)
+- **Frontend:** Next.js
+- **Embeddings:** Sentence transformers via `@huggingface/transformers` (runs locally, no API keys)
+- **Vector Store:** In-memory cosine similarity search
+- **LLM:** Mocked (demonstrates pipeline without external dependencies)
+
+---
+
+# Original Assignment
+
 ## Overview
 
 The goal of this task is to evaluate your ability to design and implement a **small AI-powered backend system**.
